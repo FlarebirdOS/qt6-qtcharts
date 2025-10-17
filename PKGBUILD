@@ -1,6 +1,6 @@
 pkgname=qt6-qtcharts
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Provides a set of easy to use chart components"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(17a3a6be4eb24b8761f10c350ba73e75734ce52394399e741eb328d121abb641)
+sha256sums=(2700d8f1c7c1ad67debb8a95912d911930a421525f6be0507206d6e845fc09c0)
 
 build() {
     cd ${pkgname#*-}
